@@ -7,7 +7,7 @@ st.title("Test your Heart Condition!")
 
 @st.cache_data
 def get_model():
-    return joblib.load('heart_knn_model.joblib')
+    return joblib.load('heart_knn_model2.joblib')
 
 
 cp=st.text_input("Have you ever feel chest pain? (Enter 1 = yes; 0 = no):","")
