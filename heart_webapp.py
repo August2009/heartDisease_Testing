@@ -31,10 +31,10 @@ if st.button("Check your Heart Condition"):
     predictions=int(predictions)
     img_happy='happy.jpg'
     img_sad='sad.jpg'
-    if predictions==0:
+    if predictions==1:
         st.write("Yahh...You have NO Heart Diseases.") 
         st.image(img_happy,caption='Happy')
-    elif predictions==1:
+    elif predictions==0:
         st.write("I am so sorry! You have got Heart Diseases!")
         st.image(img_sad,caption='Sad')
     else:
