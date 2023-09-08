@@ -5,7 +5,7 @@ import numpy as np
 st.set_page_config(page_title='Heart Testing')
 st.title("Test your Heart Condition!")
 
-@st.cache(allow_output_mutation=True)
+@st.cache_data
 def get_model():
     return joblib.load('heart_knn_model.joblib')
 
