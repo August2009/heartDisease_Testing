@@ -8,8 +8,6 @@ st.title("Test your Heart Condition!")
 @st.cache(allow_output_mutation=False)
 def get_model():
     return joblib.load('heart_knn_model.joblib')
-
-
 cp=st.text_input("Have you ever feel chest pain? (Enter 1 = yes; 0 = no):","")
 trestbps=st.text_input("Enter resting blood pressure in beat per second. (Normal BP in adults is 120/80 mm Hg.) :","")
 chol=st.text_input("Enter serum cholestoral in mg/dl. (Optimal: less than 100 mg/ dL.):","")
@@ -17,8 +15,6 @@ fbs=st.text_input("Enter fasting blood sugar &gt; 120 mg/dl. (Enter 1 = true; 0 
 restecg=st.text_input("Enter resting electrocardiographic results. (Enter 0 = bad; 1 = Normal; 2 = Good):","")
 thalach=st.text_input("Enter maximum heart rate achieved:","")
 exang=st.text_input("Enter exercise induced angina (Enter 1 = yes; 0 = no):","")
-
-
 if st.button("Check your Heart Condition"):
     values=[cp,trestbps,chol,fbs,restecg,thalach,exang]
     num_values=[]
