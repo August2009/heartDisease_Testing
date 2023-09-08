@@ -29,8 +29,8 @@ if st.button("Check your Heart Condition"):
     num_values=np.asarray(num_values).reshape(1,-1)
     predictions=get_model().predict(num_values)
     predictions=int(predictions)
-    img_happy='happy.jpg'
-    img_sad='sad.jpg'
+    img_happy='minions_yay.gif'
+    img_sad='sorry.gif'
     if predictions==0:
         st.write("Yahh...You have NO Heart Diseases.") 
         st.image(img_happy,caption='Happy')
